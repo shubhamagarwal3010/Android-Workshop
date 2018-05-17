@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TravelPlanner</string>
+    <string name="title_activity_travel_planner">TravelPlannerActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="calculate">Calculate</string>
+    <string name="Total_time_Needed">Total time Needed = </string>
+    <string name="launchCamera">launchCamera</string>
+    <string name="velocity">Avg. velocity</string>
+    <string name="distance">Total Distance</string>
+</resources>

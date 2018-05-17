@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">यात्रा योजनाकार</string>
+    <string name="title_activity_travel_planner">यात्रा योजनाकार गतिविधि</string>
+
+    <string name="hello_world">नमस्ते दुनिया!</string>
+    <string name="action_settings">Settings</string>
+    <string name="calculate">सेटिंग्स</string>
+    <string name="Total_time_Needed">कुल समय की आवश्यकता = </string>
+    <string name="launchCamera">लॉन्च कैमरा</string>
+    <string name="velocity">औसत गति</string>
+    <string name="distance">कुल दूरी</string>
+</resources>
