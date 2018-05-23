@@ -60,7 +60,7 @@ public class NewsDetailsActivity extends AppCompatActivity {
                 Toast.makeText(NewsDetailsActivity.this, "Error in loading webpage", Toast.LENGTH_SHORT).show();
             }
         });
-        webView.loadUrl(NewsStore.getNewsArticles().get(index).getUrlToArticle());
+        webView.loadUrl(NewsStore.getNewsArticles().get(index).getUrl());
         getSupportActionBar().setTitle(NewsStore.getNewsArticles().get(index).getTitle());
     }
 
