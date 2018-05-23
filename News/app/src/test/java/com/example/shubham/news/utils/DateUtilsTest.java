@@ -4,9 +4,12 @@ import com.google.firebase.crash.FirebaseCrash;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Matchers;
 import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
+
+import java.text.ParseException;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({FirebaseCrash.class})
@@ -31,7 +34,10 @@ public class DateUtilsTest {
     @Test
     public void formatNewsApiDate_incorrectInput_returnsSame() {
         PowerMockito.mockStatic(FirebaseCrash.class);
-        String outputDate = DateUtils.formatNewsApiDate(null);
-        assertEquals(outputDate, null);
+
+        String outputDate = DateUtils.formatNewsApiDate(incorrectInputDate1);
+        assertEquals(outputDate, incorrectInputDate1);
+        PowerMockito.verifyStatic();
+        FirebaseCrash.report(Matchers.isA(ParseException.class));
     }
 }
