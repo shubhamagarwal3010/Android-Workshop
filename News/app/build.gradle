@@ -4,9 +4,9 @@ android {
     signingConfigs {
         config {
             keyAlias 'newsapp'
-            keyPassword 'Sonu@0834'
+            keyPassword 'password'
             storeFile file('/Users/shubhama/Desktop/Courses/practice/5-android/shubhamkeystore')
-            storePassword 'Sonu@0834'
+            storePassword 'password'
         }
     }
     compileSdkVersion 27
